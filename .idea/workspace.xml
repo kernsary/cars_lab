@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce297701-8fca-42cc-aaba-7a517016a1e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/staff/Manager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/staff/Salesperson.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/stock/Family.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/stock/LuxuryCar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/stock/SUV.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/DealershipTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/clients/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/clients/Customer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Dealership.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dealership.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/stock/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/stock/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/stock/Family.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/stock/Family.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/stock/LuxuryCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/stock/LuxuryCar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/stock/SUV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/stock/SUV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/DealershipTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DealershipTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

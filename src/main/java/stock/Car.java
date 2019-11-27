@@ -7,13 +7,15 @@ public abstract class Car {
     private String colour;
     private EngineType engineType;
     private double price;
+    private double rentalPrice;
 
-    public Car(String model, String make, String colour, EngineType engineType, double price){
+    public Car(String model, String make, String colour, EngineType engineType, double price, double rentalPrice){
         this.model = model;
         this.make = make;
         this.colour = colour;
         this.engineType = engineType;
         this.price = price;
+        this.rentalPrice = price;
     }
 
     public String getModel(){
@@ -34,6 +36,10 @@ public abstract class Car {
 
     public double getPrice(){
         return this.price;
+    }
+
+    public double getRentalPrice(){
+        return this.rentalPrice;
     }
 
 

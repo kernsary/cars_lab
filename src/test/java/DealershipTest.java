@@ -15,7 +15,7 @@ public class DealershipTest {
     @Before
     public void before(){
         dealer = new Dealership();
-        suv = new SUV("Yeti", "Skoda", "Black", EngineType.DIESEL, 17000.00);
+        suv = new SUV("Yeti", "Skoda", "Black", EngineType.DIESEL, 17000.00, 500.00);
         salesperson = new Salesperson("Julie Watts");
     }
 
