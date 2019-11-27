@@ -15,7 +15,7 @@ public abstract class Car {
         this.colour = colour;
         this.engineType = engineType;
         this.price = price;
-        this.rentalPrice = price;
+        this.rentalPrice = rentalPrice;
     }
 
     public String getModel(){

@@ -33,6 +33,10 @@ public class Dealership {
         return this.staffMembers;
     }
 
+    public ArrayList<IDrive> getTestDrivers(){
+        return this.testDrivers;
+    }
+
     public double getDealerFunds(){
         return this.dealerFunds;
     }
@@ -45,6 +49,7 @@ public class Dealership {
         if(this.carsForSale.contains(car)){
             this.carsForSale.remove(car);
             client.buyCar(car);
+            this.dealerFunds += car.getPrice();
         }
     }
 
@@ -56,6 +61,7 @@ public class Dealership {
         if (this.carsForHire.contains(car)) {
             this.carsForHire.remove(car);
             client.hireCar(car);
+            this.dealerFunds += car.getRentalPrice();
         }
     }
 

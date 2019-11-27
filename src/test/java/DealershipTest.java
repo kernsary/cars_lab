@@ -40,6 +40,8 @@ public class DealershipTest {
         dealer.sellCar(suv, customer);
         assertEquals(0, dealer.getCarsForSale().size());
         assertEquals(suv, customer.getCar());
+        assertEquals(3000.00, customer.getBudget(), 0.01);
+        assertEquals(17000.00, dealer.getDealerFunds(), 0.01);
     }
 
     @Test
@@ -48,6 +50,8 @@ public class DealershipTest {
         dealer.hireCar(suv, customer);
         assertEquals(0, dealer.getCarsForHire().size());
         assertEquals(suv, customer.getCar());
+        assertEquals(19500.00, customer.getBudget(), 0.01);
+        assertEquals(500.00, dealer.getDealerFunds(), 0.01);
     }
 
     @Test
@@ -65,13 +69,13 @@ public class DealershipTest {
     @Test
     public void customerCanTestDrive() {
         assertEquals("I test drove a Yeti", dealer.arrangeTestDrive(customer, suv));
+        assertEquals(1, dealer.getTestDrivers().size());
     }
 
     @Test
     public void employeeCanTestDrive() {
         assertEquals("I test drove a Yeti", dealer.arrangeTestDrive(salesperson, suv));
+        assertEquals(1, dealer.getTestDrivers().size());
     }
-
-
 
 }
