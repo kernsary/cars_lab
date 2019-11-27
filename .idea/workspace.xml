@@ -2,14 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce297701-8fca-42cc-aaba-7a517016a1e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/clients/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/clients/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/behaviours/IDrive.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/stock/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/stock/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/stock/Family.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/stock/Family.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/stock/LuxuryCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/stock/LuxuryCar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/stock/SUV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/stock/SUV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Dealership.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dealership.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/clients/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/clients/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/clients/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/clients/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/staff/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/staff/Employee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/DealershipTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DealershipTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Dealership.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Dealership.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/stock/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/stock/Car.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/stock/Family.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/stock/Family.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/stock/LuxuryCar.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/stock/LuxuryCar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/stock/SUV.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/stock/SUV.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/DealershipTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/DealershipTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +27,7 @@
       <list>
         <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -57,31 +63,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in cars_lab">
+  <component name="RunManager" selected="JUnit.DealershipTest.employeeCanTestDrive">
     <configuration name="All in cars_lab" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cars_lab" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DealershipTest.canAddCarForHire" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cars_lab" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DealershipTest" />
-      <option name="METHOD_NAME" value="canAddCarForHire" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DealershipTest.canAddCarForSale" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cars_lab" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DealershipTest" />
-      <option name="METHOD_NAME" value="canAddCarForSale" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -106,13 +92,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DealershipTest.customerCanTestDrive" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cars_lab" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DealershipTest" />
+      <option name="METHOD_NAME" value="customerCanTestDrive" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DealershipTest.employeeCanTestDrive" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cars_lab" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DealershipTest" />
+      <option name="METHOD_NAME" value="employeeCanTestDrive" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DealershipTest.employeeCanTestDrive" />
+        <item itemvalue="JUnit.DealershipTest.customerCanTestDrive" />
         <item itemvalue="JUnit.All in cars_lab" />
         <item itemvalue="JUnit.DealershipTest.canAddFunds" />
         <item itemvalue="JUnit.DealershipTest.canAddEmployee" />
-        <item itemvalue="JUnit.DealershipTest.canAddCarForHire" />
-        <item itemvalue="JUnit.DealershipTest.canAddCarForSale" />
       </list>
     </recent_temporary>
   </component>

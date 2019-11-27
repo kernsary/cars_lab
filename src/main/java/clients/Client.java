@@ -1,8 +1,9 @@
 package clients;
 
+import behaviours.IDrive;
 import stock.Car;
 
-public abstract class Client {
+public abstract class Client implements IDrive {
 
     protected String name;
     protected double budget;
@@ -20,8 +21,12 @@ public abstract class Client {
         return this.budget;
     }
 
+    public String testDrive(Car newCar){
+        return "I test drove a " + newCar.getModel();
+    }
+
     public abstract void buyCar(Car car);
 
     public abstract void hireCar(Car car);
 
-    }
+}

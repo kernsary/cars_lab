@@ -1,10 +1,11 @@
 package staff;
 
+import behaviours.IDrive;
 import stock.Car;
 
 import java.util.ArrayList;
 
-public abstract class Employee {
+public abstract class Employee implements IDrive {
 
     private String name;
     private ArrayList<Car> carsSold;
@@ -26,6 +27,10 @@ public abstract class Employee {
 
     public double getSalesIncome(){
         return this.salesIncome;
+    }
+
+    public String testDrive(Car newCar){
+        return "I test drove a " + newCar.getModel();
     }
 
 }

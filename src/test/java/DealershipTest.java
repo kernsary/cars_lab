@@ -1,3 +1,4 @@
+import clients.Customer;
 import org.junit.Before;
 import org.junit.Test;
 import staff.Salesperson;
@@ -11,12 +12,14 @@ public class DealershipTest {
     private Dealership dealer;
     private SUV suv;
     private Salesperson salesperson;
+    private Customer customer;
 
     @Before
     public void before(){
         dealer = new Dealership();
         suv = new SUV("Yeti", "Skoda", "Black", EngineType.DIESEL, 17000.00, 500.00);
         salesperson = new Salesperson("Julie Watts");
+        customer = new Customer("Billy Weir", 20000.00);
     }
 
     @Test
@@ -34,15 +37,17 @@ public class DealershipTest {
     @Test
     public void canSellCar(){
         dealer.addCarForSale(suv);
-        dealer.sellCar(suv);
+        dealer.sellCar(suv, customer);
         assertEquals(0, dealer.getCarsForSale().size());
+        assertEquals(suv, customer.getCar());
     }
 
     @Test
     public void canHireCar(){
         dealer.addCarForHire(suv);
-        dealer.hireCar(suv);
+        dealer.hireCar(suv, customer);
         assertEquals(0, dealer.getCarsForHire().size());
+        assertEquals(suv, customer.getCar());
     }
 
     @Test
@@ -56,6 +61,17 @@ public class DealershipTest {
         dealer.changeFunds(100);
         assertEquals(100, dealer.getDealerFunds(), 0.01);
     }
+
+    @Test
+    public void customerCanTestDrive() {
+        assertEquals("I test drove a Yeti", dealer.arrangeTestDrive(customer, suv));
+    }
+
+    @Test
+    public void employeeCanTestDrive() {
+        assertEquals("I test drove a Yeti", dealer.arrangeTestDrive(salesperson, suv));
+    }
+
 
 
 }

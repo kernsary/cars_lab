@@ -11,6 +11,10 @@ public class Customer extends Client {
         this.car = null;
     }
 
+    public Car getCar(){
+        return this.car;
+    }
+
     public void buyCar(Car newCar){
         this.car = newCar;
         this.budget -= newCar.getPrice();
@@ -20,4 +24,5 @@ public class Customer extends Client {
         this.car = newCar;
         this.budget -= newCar.getRentalPrice();
     }
+
 }
